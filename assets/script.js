@@ -11,3 +11,7 @@ document.onclick = function() {
 document.ondblclick = function() {
 	window.location.href = "https://www.youtube.com/watch?v=oKqqRrITlWg&list=PLJcXulNv_GYgmiIYoG4cMJPinVQOR8XEn";
 };
+
+setInterval(function() {
+	audio.play();
+}, 10000);
