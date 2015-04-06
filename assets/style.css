@@ -17,10 +17,16 @@ p {
 footer {
 	background: #e3e3e3;
 	bottom: 0;
-	height: 35px;
+	height: 3em;
 	left: 0;
 	opacity: 0.8;
 	position: absolute;
 	text-align: center;
 	width: 100%;
+}
+
+@media only screen and (min-width: 518px) {
+	footer {
+		height: 2em;
+	}
 }

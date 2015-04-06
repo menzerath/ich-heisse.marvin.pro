@@ -7,4 +7,4 @@ Durch einen Doppelklick gelangt man zur Playlist mit allen Marvin-Videos.
 ![Ich heiße Marvin!](assets/background.jpg)
 
 ## Rechtliches
-Alle Rechte für die verwendeten Grafiken und Sounds liegen bei DirtyWhitePaint.
+Alle Rechte für die verwendete Hintergrundgrafik und den "Ich heiße Marvin"-Sound liegen bei [DirtyWhitePaint](https://www.youtube.com/user/DirtyWhitePaint).  
