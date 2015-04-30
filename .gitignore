@@ -1,0 +1,6 @@
+# IDE (IntelliJ IDEA)
+.idea
+ich-heisse-marvin.de.iml
+
+# small HTTP-Server
+HTTP-Server-*.jar
