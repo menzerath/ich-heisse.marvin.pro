@@ -5,13 +5,64 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<title>Ich heiße Marvin!</title>
 	<meta name="description" content="Ich heiße Marvin! Eine Website rund um Marvin, den Marienkäfer von DirtyWhitePaint." />
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<style>
+		html {
+			background: url("assets/background.jpg") no-repeat center center;
+			background-size: cover;
+			min-height: 100%;
+		}
+
+		body {
+			min-height: 100%;
+		}
+
+		p {
+			font-family: sans-serif;
+			font-size: .72em;
+			margin: 10px 0 0 0;
+		}
+
+		footer {
+			background: #e3e3e3;
+			bottom: 0;
+			height: 3em;
+			left: 0;
+			opacity: 0.8;
+			position: absolute;
+			text-align: center;
+			width: 100%;
+		}
+
+		@media only screen and (min-width: 518px) {
+			footer {
+				height: 2em;
+			}
+		}
+	</style>
 	<link rel="shortcut icon" href="assets/favicon.png">
 </head>
 <body>
 	<footer>
 		<p>Die Hintergrundgrafik und der "Ich heiße Marvin"-Sound sind Eigentum von <a href="https://www.youtube.com/user/DirtyWhitePaint" target="_blank">DirtyWhitePaint</a>. | <a href="https://github.com/MarvinMenzerath/ich-heisse-marvin.de" target="_blank">Quellcode</a></p>
 	</footer>
-	<script src="assets/script.js"></script>
+	<script>
+		var sound = new Audio("assets/sound.mp3");
+
+		window.onload = function() {
+			sound.play();
+
+			setInterval(function() {
+				sound.play();
+			}, 10000);
+		};
+
+		document.onclick = function() {
+			sound.play();
+		};
+
+		document.ondblclick = function() {
+			window.location.href = "https://www.youtube.com/watch?v=oKqqRrITlWg&list=PLJcXulNv_GYgmiIYoG4cMJPinVQOR8XEn";
+		};
+	</script>
 </body>
 </html>
