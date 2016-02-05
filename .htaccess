@@ -1,7 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTPS} !=on
-RewriteCond %{ENV:HTTPS} !=on
-RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
-
-RewriteCond %{HTTP_HOST} !=ich-heisse-marvin.de
-RewriteRule (.*) https://ich-heisse-marvin.de/$1 [R=301,L]
