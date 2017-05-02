@@ -1,0 +1,11 @@
+image: alpine:3.5
+
+before_script:
+    - apk -U add ca-certificates lftp
+
+deploy:
+    stage: deploy
+    only:
+        - master
+    script:
+        - lftp -u $FTP_USER,$FTP_PASSWORD host01.marvin-menzerath.de -e "mirror -e -R -x .git* -x README.md -p ./ ./; quit"
