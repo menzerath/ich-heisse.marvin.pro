@@ -1,4 +1,4 @@
-image: alpine:3.5
+image: alpine:3.7
 
 before_script:
     - apk -U add ca-certificates lftp
@@ -11,4 +11,4 @@ deploy_production:
     only:
         - master
     script:
-        - lftp -u $FTP_USER,$FTP_PASSWORD host01.marvin-menzerath.de -e "mirror --delete --reverse --parallel --no-perms -x .git* -x README.md ./ ./; quit"
+        - lftp -u $FTP_USER,$FTP_PASSWORD host05.marvin-menzerath.de -e "mirror --delete --reverse --parallel --no-perms -x .git* -x README.md ./ ./; quit"
