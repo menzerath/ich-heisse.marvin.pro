@@ -11,4 +11,3 @@ deploy:
     - gcloud auth activate-service-account --key-file /tmp/service-key.json
     - rm -rf .git* README.md
     - gsutil -m rsync -r -d ./ gs://$GCP_BUCKET_NAME
-    - gsutil -m acl ch -r -u allUsers:R gs://$GCP_BUCKET_NAME
