@@ -12,7 +12,7 @@ jobs:
       name: production
       url: https://ich-heisse.marvin.pro
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: setup google cloud sdk
         uses: google-github-actions/setup-gcloud@v0.2.1
         with:
