@@ -1,10 +1,6 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": [
-        "config:base"
-    ],
-    "commitMessagePrefix": "chore: ",
-    "reviewers": [
-        "menzerath"
-    ]
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>menzerath/renovate-config"
+  ]
 }
