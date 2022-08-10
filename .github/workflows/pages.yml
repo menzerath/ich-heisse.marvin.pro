@@ -27,7 +27,7 @@ jobs:
       - name: configure github pages
         uses: actions/configure-pages@v1.1.0
       - name: store website artifact
-        uses: actions/upload-pages-artifact@v1.0.2
+        uses: actions/upload-pages-artifact@v1.0.3
         with:
           path: ./public
   deploy:
