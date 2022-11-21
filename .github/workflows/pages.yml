@@ -41,4 +41,4 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v3.1.0
       - name: deploy to github pages
-        uses: actions/deploy-pages@v1.2.2
+        uses: actions/deploy-pages@v1.2.3
