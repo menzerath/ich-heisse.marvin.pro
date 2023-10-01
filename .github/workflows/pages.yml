@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repository
-        uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4.0.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
       - name: configure github pages
         uses: actions/configure-pages@v3.0.6
       - name: store website artifact
@@ -39,6 +39,6 @@ jobs:
       url: https://ich-heisse.marvin.pro
     steps:
       - name: checkout repository
-        uses: actions/checkout@3df4ab11eba7bda6032a0b82a6bb43b11571feac # v4.0.0
+        uses: actions/checkout@8ade135a41bc03ea155e62e844d188df1ea18608 # v4.1.0
       - name: deploy to github pages
         uses: actions/deploy-pages@v2.0.4
