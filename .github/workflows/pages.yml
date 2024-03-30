@@ -26,7 +26,7 @@ jobs:
       - name: checkout repository
         uses: actions/checkout@v4.1.1
       - name: configure github pages
-        uses: actions/configure-pages@v4.0.0
+        uses: actions/configure-pages@v5.0.0
       - name: store website artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
